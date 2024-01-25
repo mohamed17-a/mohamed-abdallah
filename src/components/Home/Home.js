@@ -6,7 +6,7 @@ import { Carousel, Card, Button, Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap, faCss3, faGithub, faHtml5, faJs, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import project from '../../projects'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     /* manage contact form section states */
@@ -189,7 +189,7 @@ const Home = () => {
                             </Form.Group>
 
                             <Button type="submit">
-                                Submit
+                                Send <FontAwesomeIcon icon={faEnvelope} />
                             </Button>
                         </Form>
                     </div>

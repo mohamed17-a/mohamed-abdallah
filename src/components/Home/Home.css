@@ -1,0 +1,121 @@
+section {
+    background-color: #333 !important;
+    color: #00ad57 !important;
+    font-family: 'Rubik';
+}
+
+.projects h3,
+.contact h3,
+.services h3 {
+    text-align: center;
+}
+
+/*skills carousel*/
+.skills {
+    background-color: #00ad57 !important;
+    height: 100px;
+    max-width: 100%;
+    width: 100%;
+    color: #333 !important;
+    padding: 30px;
+    text-align: center;
+}
+
+.skills .carousel-indicators {
+    margin-top: 130px;
+    padding: auto;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+}
+
+.skills .carousel-item {
+    width: 100%;
+    color: #333 !important;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.carousel-item .svg-inline--fa {
+    color: #333 !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    display: none !important;
+}
+
+/*Services section*/
+.services {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+.services .card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #004768 !important;
+    color: #00ad57 !important;
+    margin: 10px 0px;
+}
+
+.services .card .btn {
+    color: #00e070;
+    font-family: 'Rubik';
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+/*projects section*/
+.projects {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+.projects .card {
+    width: auto;
+    height: auto;
+    background-color: #004768 !important;
+    color: #00ad57 !important;
+    margin: 10px 5px;
+}
+
+.projects .card .btn {
+    color: #00e070;
+    font-family: 'Rubik';
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+/*contact section*/
+.contact {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.contact form .form-control,
+.form-control::placeholder {
+    background-color: #004768 !important;
+    color: #00ad57 !important;
+    border: none;
+}
+
+.contact form .btn {
+    background-color: #004768;
+    margin: 10px 0px;
+    color: #00ad57;
+    font-weight: bold;
+}
+
+.contact form .btn:hover {
+    background-color: #00ad57;
+    color: #004768;
+}

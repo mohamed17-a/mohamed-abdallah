@@ -33,8 +33,8 @@ const Home = () => {
             Username: "mohamed.youssef344@gmail.com",
             Password: "8A3FA58E0FF6904DDF527CFE6852D44B950C",
             To: "moabdallah7.office@gmail.com",
-            From: formData.email,
-            Subject: "conatct from portfolio" + formData.name,
+            From: "mohamed.youssef344@gmail.com",
+            Subject: formData.email + formData.name,
             Body: formData.message
         }).then(
             message => alert(message)

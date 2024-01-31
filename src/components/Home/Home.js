@@ -28,6 +28,17 @@ const Home = () => {
         e.preventDefault();
         // Handle form submission logic 
         console.log('Form submitted:', formData);
+        window.Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "mohamed.youssef344@gmail.com",
+            Password: "8A3FA58E0FF6904DDF527CFE6852D44B950C",
+            To: "moabdallah7.office@gmail.com",
+            From: formData.email,
+            Subject: "conatct from portfolio" + formData.name,
+            Body: formData.message
+        }).then(
+            message => alert(message)
+        );
         setFormData({
             name: '',
             email: '',
@@ -142,6 +153,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            {/* Contact Section */}
             <section className='contact' id='Contact'>
                 <div className='container'>
                     <div className='row'>

@@ -34,8 +34,9 @@ const Home = () => {
             Password: "8A3FA58E0FF6904DDF527CFE6852D44B950C",
             To: "moabdallah7.office@gmail.com",
             From: "mohamed.youssef344@gmail.com",
-            Subject: formData.email + formData.name,
-            Body: formData.message
+            Subject: formData.email,
+            Body: `Name : ${formData.name} 
+            Message:${formData.message}`
         }).then(
             message => alert(message)
         );

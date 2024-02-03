@@ -60,3 +60,8 @@
 #resumeBtn .svg-inline--fa {
     color: #333 !important;
 }
+#resumeBtn:hover,
+#resumeBtn.svg-inline--fa:hover {
+    background-color: #004768 !important;
+    color: #00ad57 !important;
+}

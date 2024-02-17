@@ -27,7 +27,7 @@ const Home = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic 
-        console.log('Form submitted:', formData);
+        // console.log('Form submitted:', formData);
         window.Email.send({
             Host: "smtp.elasticemail.com",
             Username: "mohamed.youssef344@gmail.com",
@@ -45,7 +45,7 @@ const Home = () => {
             email: '',
             message: '',
         });
-        //can add your logic to send the data to a server or perform any other actions.
+        //can add logic to send the data to a server or perform any other actions.
     };
 
     const Project = project.map(item => {

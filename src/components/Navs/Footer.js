@@ -17,7 +17,7 @@ const Footer = () => {
                     <Nav.Link href="https://github.com/mohamed17-a" target='blank'>
                         Github<FontAwesomeIcon icon={faGithub} />
                     </Nav.Link>
-                    <Nav.Link href="https://leetcode.com" target='blank'>
+                    <Nav.Link href="https://leetcode.com/MoAbdallah17/" target='blank'>
                         LeetCode<FontAwesomeIcon icon={faCode} />
                     </Nav.Link>
                 </Nav>

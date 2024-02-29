@@ -70,7 +70,7 @@ const Home = () => {
         <>
             <Header />
             {/* skills carousel section */}
-            <section className='skills'>
+            <div className='skills'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-12 col-lg-12'>
@@ -94,8 +94,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
                 {/*Services section */}
-            </section>
             <section className='services' id='Services'>
                 <div className='container'>
                     <div className='row'>

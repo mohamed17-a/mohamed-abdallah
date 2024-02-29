@@ -25,6 +25,8 @@ section {
     color: #333 !important;
     padding: 30px;
     text-align: center;
+    font-family: 'Rubik';
+    letter-spacing: 3px;
 }
 
 .skills .carousel-indicators {

@@ -111,8 +111,8 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faReact} />
                                     <Card.Title>React Js Responsive Web Apps</Card.Title>
                                     <Card.Text>
-                                        I build responsive websites using React Js, including state management, handling user input, and conditional rendering.
-                                        BootStrap, CSS, FontAwesomeIcons and more... .
+                                        I build responsive websites using React Js, including state management, React Router, handling user input, and conditional rendering.
+                                        BootStrap, CSS, Material UI, FontAwesomeIcons and more... .
                                     </Card.Text>
                                 </Card.Body>
                                 <Button variant="secondary" href={'https://github.com/mohamed17-a'} target='blank'>
@@ -128,7 +128,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faDatabase} />
                                     <Card.Title>Node Js And MongoDB</Card.Title>
                                     <Card.Text>
-                                        I build responsive websites using Node Js and Express ,including using template engines as hbs.
+                                        I build responsive websites using Node Js and Express , including using template engines as hbs.
                                         Using also MongoDB is a powerful and highly scalable database, suitable for use on any application's backend.
                                     </Card.Text>
                                 </Card.Body>

@@ -87,13 +87,13 @@ const About = () => {
               </span>
               <p className="px-2">
                 <span className="fw-bolder ">
-                  ILLA Trucking & Logistics Solutions
+                 --
                 </span>{" "}
                 <br />
                 (08/2024) - (present)
               </p>
               <p className="px-1">
-                A 3-months React web developement internship.
+               --.
               </p>
             </div>
           </div>

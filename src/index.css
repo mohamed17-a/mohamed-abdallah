@@ -15,11 +15,13 @@ body {
   color: #f1f1f1;
 }
 .animate__fadeInLeft,
-.animate__fadeInRight {
+.animate__fadeInRight,
+.animate__zoomInUp {
   animation-duration: 1s;
 }
-.animate__fadeInUp {
-  animation-duration: 2s;
+.animate__fadeInUp,
+.animate__fadeInDown {
+  animation-duration: 0.7s;
 }
 .animate__headShake {
   animation-duration: 2s;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import image from "../assets/WhatsApp_Image_2024-07-26_at_5.46.28_PM-removebg.png";
+import image from "../assets/HomeMohamedPicture.png";
 const Home = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",

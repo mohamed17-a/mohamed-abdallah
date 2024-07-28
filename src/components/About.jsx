@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div className="container mb-4 overflow-hidden">
         <div className="row">
           <div className="col-md-6 col-lg-6 pt-3 mt-md-5">
             <span
@@ -34,7 +34,7 @@ const About = () => {
             <h1 className="text-center">Education</h1>
             <div className="border-start">
               {/* first education */}
-              <span className="badge text-bg-primary fs-6 pe-3">
+              <span className="badge text-bg-primary fs-6 pe-3 text-wrap">
                 Bachelor&apos;s Degree In Computer Science
               </span>
               <p className="px-2">
@@ -46,7 +46,7 @@ const About = () => {
                 cumulative GPA of 3.1/4.0.
               </p>
               {/* second education */}
-              <span className="badge text-bg-primary fs-6 ">
+              <span className="badge text-bg-primary fs-6 text-wrap">
                 Professional Front-End Web Development Nano Degree
               </span>
               <p className="px-2">
@@ -56,7 +56,7 @@ const About = () => {
               <p className="px-1">
                 Credential: <br />
                 <a
-                  className="text-decoration-none text-light"
+                  className="text-decoration-none text-light text-break"
                   href="https://www.udacity.com/certificate/CMDAZQU6"
                   target="_blank"
                 >
@@ -64,7 +64,7 @@ const About = () => {
                 </a>
               </p>
               {/* third education */}
-              <span className="badge text-bg-primary fs-6 pe-3">
+              <span className="badge text-bg-primary fs-6 pe-3 text-wrap">
                 React Web Developer Trainee - DEPI
               </span>
               <p className="px-2">
@@ -78,7 +78,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4 col-lg-4 pt-3 mt-md-5 ps-4">
+          <div className="col-md-4 col-lg-4 pt-3 mt-md-5 ps-3">
             <h1 className="text-center">Experience</h1>
             <div className="border-start">
               {/* first work experience */}
@@ -86,14 +86,11 @@ const About = () => {
                 Front-End developer - Intern
               </span>
               <p className="px-2">
-                <span className="fw-bolder ">
-                 --
-                </span>{" "}
-                <br />
+                <span className="fw-bolder ">Processing.........</span> <br />
                 (08/2024) - (present)
               </p>
               <p className="px-1">
-               --.
+                A 3-months React web developement internship.
               </p>
             </div>
           </div>

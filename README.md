@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Mohamed Abdallah Portfolio
+This app was built with React Js, CSS, React-Bootstrap, FontAwesomeIcons, favicon.io and Google font: 'Rubik'.
+Including state management, handling user input, and conditional rendering.
+Used Smtpjs Api to handle contact form data.
+Used : Free SVG Backgrounds and Patterns[https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/] 
+## Deployment
+Deployed on Vercel.
+[https://mohamed-abdallah.vercel.app/]

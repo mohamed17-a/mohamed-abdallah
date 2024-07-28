@@ -1,11 +1,27 @@
-body {
-  margin: 0;
-  font-family: 'Rubik', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-dark: #051727;
+  --main-light: #0e4779;
+  --main-transparent: #0d365a8f;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to left, var(--main-dark), #07233b, #0a2f50);
+  color: #f1f1f1;
+}
+.animate__fadeInLeft,
+.animate__fadeInRight {
+  animation-duration: 1s;
+}
+.animate__fadeInUp {
+  animation-duration: 2s;
+}
+.animate__headShake {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

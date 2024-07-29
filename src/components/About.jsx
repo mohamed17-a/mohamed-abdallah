@@ -120,7 +120,7 @@ const About = () => {
                 (08/2024) - (present)
               </p>
               <p className="px-1">
-                A 3-months React web developement internship.
+                React Front-End web development internship.
               </p>
             </div>
           </div>

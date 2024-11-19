@@ -2,6 +2,7 @@ import ToDoList from './assets/ToDoList.png'
 import MMS from './assets/MMS.png'
 import newsAppImg from './assets/newsAppReact.png'
 import WeatherApp from "./assets/WeatherAppReact.png"
+import pokemonGallery from "./assets/pokemonGallery.png"
 const projects = [
     {
         img: MMS,
@@ -37,6 +38,14 @@ const projects = [
         `,
         repo: "https://github.com/mohamed17-a/news-app",
         Api : "https://newsapi.org/"
-    }
+    },
+    {
+        img: pokemonGallery,
+        title: 'pokemon-gallery',
+        descrip: `A React-based application utilizing TypeScript and Ant Design with Poke API integration.
+        `,
+        repo: "https://github.com/mohamed17-a/pokemon-gallery",
+        Api : "https://pokeapi.co/"
+    },
 ]
 export default projects;

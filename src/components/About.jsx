@@ -1,17 +1,22 @@
+/* skill -- name:display , key: refers to icon Class Name in CoreUI icons */
+const skills = [
+  { name: "HTML", key: "cib-html5" },
+  { name: "CSS", key: "cib-css3" },
+  { name: "Bootstrap", key: "cib-bootstrap" },
+  { name: "JavaScript", key: "cib-js" },
+  { name: "TypeScript", key: "cib-typescript" },
+  { name: "React", key: "cib-react" },
+  { name: "Postman", key: "cib-postman" },
+  { name: "Angular", key: "cib-angular" },
+  { name: "Jira Atlassian", key: "cib-atlassian" },
+  { name: "Slack", key: "cib-slack" },
+  { name: "Git", key: "cib-git" },
+  { name: "Problem Solving", key: "cib-leetcode" },
+  { name: "OOP", key: "cil-object-group" },
+  { name: "Ant Design", key: "cil-object-group" },
+  { name: "Next.js", key: "cib-next-js" },
+];
 const About = () => {
-  /* skill -- name:display , key: refers to icon Class Name in CoreUI icons */
-  const skills = [
-    { name: "HTML", key: "cib-html5" },
-    { name: "CSS", key: "cib-css3" },
-    { name: "Bootstrap", key: "cib-bootstrap" },
-    { name: "JavaScript", key: "cib-js" },
-    { name: "TypeScript", key: "cib-typescript" },
-    { name: "React", key: "cib-react" },
-    { name: "Angular", key: "cib-angular" },
-    { name: "Git", key: "cib-git" },
-    { name: "Problem Solving", key: "cib-leetcode" },
-    { name: "OOP", key: "cil-object-group" },
-  ];
   return (
     <>
       <div className="container mb-4 overflow-hidden">
@@ -26,7 +31,7 @@ const About = () => {
           </div>
           <div className="col-md-9 col-lg-9 pt-3 mt-md-5">
             <span className="badge text-bg-secondary fs-6 rounded-5 animate__fadeInLeft">
-              Skills
+              Skills & Tools
             </span>
             {skills.map((s) => (
               <span
@@ -47,14 +52,15 @@ const About = () => {
               WEB DEVELOPER
             </h1>
             <p className="fw-bolder">
-              A software developer who graduated from FCAI-HU, I have a wide set
-              of technical and professional skills in web development, including
-              proficiency in HTML, CSS, JavaScript, Node.js, Angular and
-              React.js. My expertise extends to essential skills such as
+              A software developer who graduated from FCAI-HU. I&apos;ve got a
+              bedrock in web development, with proficiency and hands-on
+              experience in HTML, CSS, JavaScript, React.js, Next.js, and
+              Node.js. My expertise extends to essential skills such as
               problem-solving, object-oriented programming (OOP), and Agile
-              frameworks. Having completed my year of military service in
-              December 2023. Now, I am a trainee at Yat Learning Centers, part
-              of DEPI from MCIT.
+              frameworks. I&apos;m familiar with Angular, unit testing,
+              express.js, MySQL, and MongoDB. Now, I graduated from the DEPI
+              program provided by MCIT. I also worked as a front-end developer
+              intern at ILLA Holding.
             </p>
           </div>
           <div className="col-md-4 col-lg-4 pt-3 my-md-5 animate__zoomInUp">
@@ -96,12 +102,18 @@ const About = () => {
               </span>
               <p className="px-2">
                 <span className="fw-bolder ">YAT Learning Center</span> -
-                (03/2024) / (present)
+                (03/2024) / (10/2024)
               </p>
               <p className="px-1">
-                A 6-months initiative from the Egyptian Ministry of
-                Communications to learn how to develop front-end applications
-                using React, and Node js.
+                I am a graduate of the React Web Developer track from the
+                Digital Egypt Pioneers Initiative (DEPI). This program honed my
+                expertise in HTML5, CSS3, JavaScript, and React.js, enabling me
+                to build responsive and interactive web applications.
+                Additionally, I gained back-end development knowledge using
+                Node.js, Express.js, and MongoDB. The initiative also enhanced
+                my business English communication skills, preparing me for
+                professional roles in tech industries and collaborative
+                environments
               </p>
             </div>
           </div>
@@ -113,14 +125,15 @@ const About = () => {
                 Front-End developer - Intern
               </span>
               <p className="px-2">
-                <span className="fw-bolder ">
-                  ILLA Trucking & Logistics Solutions
-                </span>{" "}
-                <br />
-                (08/2024) - (present)
+                <span className="fw-bolder ">ILLA Holding</span> - (08/2024) /
+                (11/2024)
               </p>
               <p className="px-1">
-                React Front-End web development internship.
+                Contributed to the codebase, enhancing functionality and user
+                experience using Next.js and Ant Design. Collaborated closely
+                with product managers, product designers, backend engineers, and
+                QAs to ensure high-quality, industry-focused solutions.
+                Experience in logistics and warehousing solutions.
               </p>
             </div>
           </div>

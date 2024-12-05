@@ -87,10 +87,9 @@ const Contact = () => {
               </span>
               <p>
                 <a
-                  href="tel:+201116730933"
+                  href="#"
                   className="text-light text-decoration-none"
                 >
-                  +20 1116730933
                 </a>
               </p>
             </div>

@@ -2,27 +2,208 @@
   --main-dark: #051727;
   --main-light: #0e4779;
   --main-transparent: #0d365a8f;
+
+  /* chrome/glass layer shared by nav + footer */
+  --chrome-bg: rgba(5, 23, 39, 0.82);
+  --chrome-blur: blur(14px);
+  --chrome-border: rgba(14, 71, 121, 0.5);
+
+  /* Spacing tokens */
+  --section-py: 4rem;
+  --section-py-sm: 2rem;
 }
+
 /* reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background: linear-gradient(to left, var(--main-dark), #07233b, #0a2f50);
   color: #f1f1f1;
 }
+
+/* Stretch layout so footer stays at page bottom */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Offset anchor targets so sticky navbar doesn't cover them */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ── Shared chrome: navbar + footer ─────────────────────────── */
+.site-navbar,
+.site-footer {
+  background-color: var(--chrome-bg);
+  backdrop-filter: var(--chrome-blur);
+  -webkit-backdrop-filter: var(--chrome-blur);
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+.site-navbar {
+  border-bottom: 1px solid var(--chrome-border);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.site-navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+.site-navbar .nav-link:hover {
+  color: #60a5fa !important;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--chrome-border);
+}
+
+/* ── Hero image ─────────────────────────────────────────────── */
+.hero-img {
+  border-radius: 1.5rem;
+  max-height: 500px;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow:
+    0 0 0 4px var(--main-light),
+    0 0 30px rgba(14, 71, 121, 0.55),
+    0 20px 60px rgba(0, 0, 0, 0.45);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 0 0 4px #60a5fa,
+    0 0 50px rgba(96, 165, 250, 0.4),
+    0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Skill pills ─────────────────────────────────────────────── */
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 2rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  background-color: rgba(14, 71, 121, 0.25);
+  border: 1px solid rgba(14, 71, 121, 0.55);
+  cursor: default;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill-pill:hover {
+  background-color: rgba(14, 71, 121, 0.55);
+  border-color: rgba(96, 165, 250, 0.55);
+  transform: translateY(-2px);
+}
+
+.skill-pill i {
+  font-size: 1rem;
+}
+
+/* ── Upwork button ───────────────────────────────────────────── */
+.btn-upwork {
+  color: #6fda44;
+  border-color: #6fda44;
+  background-color: transparent;
+}
+.btn-upwork:hover {
+  background-color: #6fda44;
+  border-color: #6fda44;
+  color: #000;
+}
+
+/* ── Project cards — only what Bootstrap can't do ───────────── */
+
+/* 1. Hover lift + glow */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 40px rgba(14, 71, 121, 0.5),
+    0 0 0 1px rgba(96, 165, 250, 0.35);
+}
+
+/* 2. Image zoom */
+.project-card__img-wrapper {
+  position: relative;
+  height: 185px;
+  overflow: hidden;
+}
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+.project-card:hover .project-card__img {
+  transform: scale(1.1);
+}
+
+/* 3. Gradient overlay */
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 23, 39, 0.88), transparent 60%);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.85rem;
+  transition: opacity 0.3s ease;
+}
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+
+/* 4. Line-clamp (no Bootstrap equivalent) */
+.project-card__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Animate.css durations ──────────────────────────────────── */
 .animate__fadeInLeft,
 .animate__fadeInRight,
 .animate__zoomInUp {
   animation-duration: 1s;
 }
+
 .animate__fadeInUp,
 .animate__fadeInDown {
   animation-duration: 0.7s;
 }
+
 .animate__headShake {
   animation-duration: 2s;
   animation-iteration-count: infinite;

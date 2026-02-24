@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cd \"D:/FE projects/mohamed-abdallah\" && npm install --save-dev prettier eslint-config-prettier 2>&1)",
-      "Bash(echo Done:*)",
-      "Bash(cd \"D:/FE projects/mohamed-abdallah\" && npm run build 2>&1)"
-    ]
-  }
-}

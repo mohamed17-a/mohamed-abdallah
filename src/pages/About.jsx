@@ -18,7 +18,13 @@ const skills = [
   { name: "Problem Solving",  key: "cib-leetcode" },
 ];
 
+import useInView from "../hooks/useInView";
+
 const About = () => {
+  const [bioRef, bioInView] = useInView();
+  const [eduRef, eduInView] = useInView();
+  const [expRef, expInView] = useInView();
+
   return (
     <>
       <div className="container mb-4 overflow-hidden">
@@ -47,7 +53,7 @@ const About = () => {
         </div>
         <div className="row mb-5 pb-5">
           {/* Bio */}
-          <div className="col-md-4 col-lg-4 pt-3 my-md-5 animate__animated animate__fadeInLeft">
+          <div ref={bioRef} className={`col-md-4 col-lg-4 pt-3 my-md-5 ${bioInView ? "animate__animated animate__fadeInLeft" : "pre-animate"}`}>
             <h2 className="text-break fs-1 fw-bolder">
               I AM MOHAMED
               <span className="text-primary"> A FRONT-END </span>
@@ -67,7 +73,7 @@ const About = () => {
           </div>
 
           {/* Education */}
-          <div className="col-md-4 col-lg-4 pt-3 my-md-5 animate__animated animate__zoomInUp">
+          <div ref={eduRef} className={`col-md-4 col-lg-4 pt-3 my-md-5 ${eduInView ? "animate__animated animate__zoomInUp" : "pre-animate"}`}>
             <h2 className="text-center">Education</h2>
             <div className="border-start">
               <span className="badge text-bg-primary fs-6 pe-3 text-wrap">
@@ -117,7 +123,7 @@ const About = () => {
           </div>
 
           {/* Experience */}
-          <div className="col-md-4 col-lg-4 pt-3 mt-md-5 ps-3 animate__animated animate__zoomInUp">
+          <div ref={expRef} className={`col-md-4 col-lg-4 pt-3 mt-md-5 ps-3 ${expInView ? "animate__animated animate__zoomInUp" : "pre-animate"}`}>
             <h2 className="text-center">Experience</h2>
             <div className="border-start">
               {/* Techademics */}

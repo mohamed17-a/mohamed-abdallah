@@ -1,6 +1,9 @@
 import project from "../projects.service";
+import useInView from "../hooks/useInView";
 
 const Projects = () => {
+  const [gridRef, gridInView] = useInView();
+
   return (
     <div className="container py-5">
       <div className="row mb-4">
@@ -15,7 +18,8 @@ const Projects = () => {
       </div>
 
       <div
-        className="rounded-3 p-4"
+        ref={gridRef}
+        className={`rounded-3 p-4 ${gridInView ? "animate__animated animate__fadeInUp" : "pre-animate"}`}
         style={{ backgroundColor: "var(--main-transparent)" }}
       >
         <div className="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">

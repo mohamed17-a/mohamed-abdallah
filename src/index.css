@@ -192,6 +192,11 @@ section[id] {
   overflow: hidden;
 }
 
+/* ── Scroll-triggered: hide before animation plays ─────────── */
+.pre-animate {
+  opacity: 0;
+}
+
 /* ── Animate.css durations ──────────────────────────────────── */
 .animate__fadeInLeft,
 .animate__fadeInRight,

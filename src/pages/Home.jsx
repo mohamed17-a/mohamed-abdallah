@@ -1,16 +1,25 @@
 import { useMediaQuery } from "react-responsive";
 import image from "../assets/MohamedPortrait.jpg";
+import useInView from "../hooks/useInView";
 
 const Home = () => {
-  const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const [leftRef, leftInView] = useInView();
+  const [rightRef, rightInView] = useInView();
+
   return (
     <div
       className={`container overflow-hidden py-5 ${isMobile && "text-center"}`}
     >
       <div className="row align-items-center">
-        <div className="col-md-6 pt-3 mt-md-3 animate__animated animate__fadeInLeft">
+        <div
+          ref={leftRef}
+          className={`col-md-6 pt-3 mt-md-3 ${
+            leftInView
+              ? "animate__animated animate__fadeInLeft"
+              : "pre-animate"
+          }`}
+        >
           <span
             className="fs-4 rounded-1 px-2"
             style={{ backgroundColor: "#0e4b81" }}
@@ -58,7 +67,14 @@ const Home = () => {
             <i className="cib-leetcode"></i>
           </a>
         </div>
-        <div className="col-md-6 pt-3 mt-md-3 animate__animated animate__fadeInRight d-flex justify-content-center">
+        <div
+          ref={rightRef}
+          className={`col-md-6 pt-3 mt-md-3 d-flex justify-content-center ${
+            rightInView
+              ? "animate__animated animate__fadeInRight"
+              : "pre-animate"
+          }`}
+        >
           <img src={image} alt="Mohamed Abdallah" className="hero-img" />
         </div>
       </div>

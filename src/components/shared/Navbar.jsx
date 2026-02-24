@@ -9,12 +9,12 @@ const Navbar = () => {
       className="site-navbar navbar navbar-expand-lg sticky-top"
       data-bs-theme="dark"
     >
-      <div className="container">
+      <div className="container flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
         <a className="navbar-brand fs-4 fw-bold text-light" href="#home">
           <span className="text-primary">{`<M />`}</span>ABDALLAH
         </a>
         <div id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto fw-bolder d-flex flex-row gap-4 align-items-center">
+          <ul className="navbar-nav ms-0 ms-md-auto fw-bolder d-flex flex-row gap-4 align-items-center">
             <li className="nav-item">
               <a className="nav-link text-light" href="#home">
                 <i className="bi bi-house-fill"></i>

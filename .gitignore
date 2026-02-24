@@ -28,3 +28,17 @@ dist-ssr
 *.sln
 *.sw?
 .claude/
+
+# Build output (already covered by 'dist' above)
+dist/
+
+# CRA leftovers
+public/index.html
+public/about.txt
+public/manifest.json
+
+# Unused / temporary assets
+src/assets/HomeMohamedPicture.png
+src/assets/JS_project.jpg
+src/assets/char.png
+src/assets/WhatsApp_Image*.png
